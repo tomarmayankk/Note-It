@@ -28,20 +28,24 @@ cd note-it
 
 - Install dependencies:
 
-```cd client && npm install
-cd ../server && npm install```
+```bash
+cd client && npm install
+cd ../server && npm install
+```
 
 - Configure .env in the server directory:
 
-```MONGO_URI=mongodb+srv://<username>:<password>@cluster.mongodb.net/note-it
-PORT=3001```
+```bash
+MONGO_URI=mongodb+srv://<username>:<password>@cluster.mongodb.net/note-it
+PORT=3001
+```
 
 - Start the app:
 
-```cd server && npm run dev
-cd ../client && npm run dev```
-
-- Open http://localhost:5173 in your browser.
+```bash
+cd server && npm run dev
+cd ../client && npm run dev
+```
 
 ## Future Plans
 
