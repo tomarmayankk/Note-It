@@ -1,7 +1,8 @@
 const mongoose = require('mongoose');
 const Document = require('./Document'); // Ensure the correct path to your Document schema
+const PORT = process.env.PORT || 3001;
 
-const io = require('socket.io')(3001, {
+const io = require('socket.io')(PORT, {
     cors: {
         origin: 'https://note-it-zcl7.vercel.app/',
         methods: ['GET', 'POST']
