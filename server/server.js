@@ -3,7 +3,7 @@ const Document = require('./Document'); // Ensure the correct path to your Docum
 
 const io = require('socket.io')(3001, {
     cors: {
-        origin: 'http://localhost:5173',
+        origin: 'https://note-it-zcl7.vercel.app/',
         methods: ['GET', 'POST']
     }
 });
