@@ -14,7 +14,7 @@ const Textedit = () => {
 
   // Initialize socket connection
   useEffect(() => {
-    const s = io("http://localhost:3001");
+    const s = io("https://note-it-three.vercel.app/");
     setSocket(s);
     return () => {
       s.disconnect();
